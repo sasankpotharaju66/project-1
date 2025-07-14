@@ -136,3 +136,39 @@ export const sampleSuppliers: Supplier[] = [
     phone: '555-456-7890'
   }
 ];
+
+export const sampleVendors = [
+  {
+    VendorID: 1,
+    Name: "Acme Supplies",
+    CategoryID: "101",
+    VendorCategory: "Office Supplies",
+    ContactNumber: "9876543210",
+    Email: "contact@acmesupplies.com",
+    ContactPerson: "John Doe",
+    Address: "123 Main St, Cityville",
+    Notes: "Preferred supplier for office essentials."
+  },
+  {
+    VendorID: 2,
+    Name: "Tech Solutions",
+    CategoryID: "102",
+    VendorCategory: "IT Services",
+    ContactNumber: "9123456780",
+    Email: "info@techsolutions.com",
+    ContactPerson: "Jane Smith",
+    Address: "456 Tech Park, Silicon City",
+    Notes: "Handles all IT infrastructure."
+  },
+  {
+    VendorID: 3,
+    Name: "CleanCo",
+    CategoryID: "103",
+    VendorCategory: "Cleaning Services",
+    ContactNumber: "9988776655",
+    Email: "support@cleanco.com",
+    ContactPerson: "Mike Johnson",
+    Address: "789 Clean Ave, Hygienetown",
+    Notes: "Monthly deep cleaning."
+  }
+];

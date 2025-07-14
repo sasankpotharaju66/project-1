@@ -38,16 +38,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   {/* Sticky Container for both navbars */}
   <div className="position-sticky top-0" style={{ zIndex: 1030 }}>
     {/* Top Navbar */}
- <nav className="navbar navbar-dark bg-light px-3">
+ <nav className="navbar navbar-dark bg-light px-4 py-3" style={{ minHeight: '72px' }}>
   <div className="d-flex align-items-center">
    <img
   src="/AurumiLogo.png"
   alt="Aurumi Logo"
-  width="28"
-  height="28"
-  className="me-2 rounded-circle"
+  width="48"
+  height="48"
+  className="me-3 rounded-circle shadow-sm"
+  style={{ objectFit: 'cover' }}
 />
-    <span className="navbar-brand text-black mb-0 h1">Vendors Management</span>
+    <span className="navbar-brand text-black mb-0" style={{ fontSize: '2.2rem', fontWeight: 700, letterSpacing: '1px' }}>
+      Vendors Management
+    </span>
   </div>
 </nav>
 
@@ -78,7 +81,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   </div>
 
   {/* Page Content */}
-  <main className="flex-1 p-6">{children}</main>
+  <main className="flex-1 p-6" style={{ paddingTop: '2.5rem', paddingLeft: '2.5rem', paddingRight: '2.5rem' }}>{children}</main>
 </div>
 
   );
